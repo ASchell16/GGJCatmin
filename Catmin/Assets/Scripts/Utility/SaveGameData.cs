@@ -7,11 +7,8 @@ using UnityEngine;
 [Serializable]
 public class SaveGameData
 {
-    public Dictionary<string,float> AudioSaves = new Dictionary<string, float>();
-    public Dictionary<string,int> VideoSaves = new Dictionary<string, int>();
-    public Dictionary<string,int> LevelSaves = new Dictionary<string, int>();
-    public Dictionary<string,float> BestTimeSaves = new Dictionary<string, float>();
-    public Dictionary<string, int> OtherIntSaves = new Dictionary<string, int>();
+    public Dictionary<string,float> FloatSaves = new Dictionary<string, float>();
+    public Dictionary<string, int> IntSaves = new Dictionary<string, int>();
 }
 
 public static class SaveLoadFile

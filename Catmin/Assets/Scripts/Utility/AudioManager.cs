@@ -203,35 +203,35 @@ public class AudioManager : Singleton<AudioManager>
 		MusicVolumeMAX = volume;
 		MusicSource.volume = MusicVolumeMAX;
 		MusicSource.volume = MusicVolumeMAX;
-		if (SaveGameManager.Instance.SaveGame.AudioSaves.ContainsKey(s_MUSIC_VOLUME_PREF_KEY))
-			SaveGameManager.Instance.SaveGame.AudioSaves[s_MUSIC_VOLUME_PREF_KEY] = volume;
+		if (SaveGameManager.Instance.SaveGame.FloatSaves.ContainsKey(s_MUSIC_VOLUME_PREF_KEY))
+			SaveGameManager.Instance.SaveGame.FloatSaves[s_MUSIC_VOLUME_PREF_KEY] = volume;
 		else
-			SaveGameManager.Instance.SaveGame.AudioSaves.Add(s_MUSIC_VOLUME_PREF_KEY, volume);
+			SaveGameManager.Instance.SaveGame.FloatSaves.Add(s_MUSIC_VOLUME_PREF_KEY, volume);
 	}
 
 	public void SetSFXVolume(float volume)
 	{
 		SFXVolumeMAX = volume;
 		SFXSource.volume = SFXVolumeMAX;
-		if (SaveGameManager.Instance.SaveGame.AudioSaves.ContainsKey(s_SFX_VOLUME_PREF_KEY))
-			SaveGameManager.Instance.SaveGame.AudioSaves[s_SFX_VOLUME_PREF_KEY] = volume;
+		if (SaveGameManager.Instance.SaveGame.FloatSaves.ContainsKey(s_SFX_VOLUME_PREF_KEY))
+			SaveGameManager.Instance.SaveGame.FloatSaves[s_SFX_VOLUME_PREF_KEY] = volume;
 		else
-			SaveGameManager.Instance.SaveGame.AudioSaves.Add(s_SFX_VOLUME_PREF_KEY, volume);
+			SaveGameManager.Instance.SaveGame.FloatSaves.Add(s_SFX_VOLUME_PREF_KEY, volume);
 	}
 	#endregion
 	#region GetVolumeValues
 	public float GetMusicVolume()
 	{
-		return SaveGameManager.Instance.SaveGame.AudioSaves.ContainsKey(s_MUSIC_VOLUME_PREF_KEY)
-			? SaveGameManager.Instance.SaveGame.AudioSaves[s_MUSIC_VOLUME_PREF_KEY]
-			: SaveGameManager.Instance.SaveGame.AudioSaves[s_MUSIC_VOLUME_PREF_KEY] = 1.0f;
+		return SaveGameManager.Instance.SaveGame.FloatSaves.ContainsKey(s_MUSIC_VOLUME_PREF_KEY)
+			? SaveGameManager.Instance.SaveGame.FloatSaves[s_MUSIC_VOLUME_PREF_KEY]
+			: SaveGameManager.Instance.SaveGame.FloatSaves[s_MUSIC_VOLUME_PREF_KEY] = 1.0f;
 	}
 
 	public float GetSFXVolume()
 	{
-		return SaveGameManager.Instance.SaveGame.AudioSaves.ContainsKey(s_SFX_VOLUME_PREF_KEY)
-			? SaveGameManager.Instance.SaveGame.AudioSaves[s_SFX_VOLUME_PREF_KEY]
-			: SaveGameManager.Instance.SaveGame.AudioSaves[s_SFX_VOLUME_PREF_KEY] = 1.0f;
+		return SaveGameManager.Instance.SaveGame.FloatSaves.ContainsKey(s_SFX_VOLUME_PREF_KEY)
+			? SaveGameManager.Instance.SaveGame.FloatSaves[s_SFX_VOLUME_PREF_KEY]
+			: SaveGameManager.Instance.SaveGame.FloatSaves[s_SFX_VOLUME_PREF_KEY] = 1.0f;
 	}
 	#endregion
 }
