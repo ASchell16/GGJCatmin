@@ -8,11 +8,11 @@
 #pragma warning disable 0429 //never used
 
 /***********************************************************************************************************
- * Produced by App Advisory - http://app-advisory.com													   *
- * Facebook: https://facebook.com/appadvisory															   *
- * Contact us: https://appadvisory.zendesk.com/hc/en-us/requests/new									   *
- * App Advisory Unity Asset Store catalog: http://u3d.as/9cs											   *
- * Developed by Gilbert Anthony Barouch - https://www.linkedin.com/in/ganbarouch                           *
+ * Produced by App Advisory - http://app-advisory.com							
+ * Facebook: https://facebook.com/appadvisory									
+ * Contact us: https://appadvisory.zendesk.com/hc/en-us/requests/new				
+ * App Advisory Unity Asset Store catalog: http://u3d.as/9cs											   
+ * Developed by Gilbert Anthony Barouch - https://www.linkedin.com/in/ganbarouch                           
  ***********************************************************************************************************/
 
 
@@ -25,6 +25,8 @@ using System.Collections;
 using System.IO;
 using System.Text.RegularExpressions;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 // from the excellent http://answers.unity3d.com/questions/45186/can-i-auto-run-a-script-when-editor-launches-or-a.html
 
 ///
@@ -32,7 +34,7 @@ using System;
 /// Execute some code exactly once, whenever the project is opened, recompiled, or run.
 ///
 
-namespace AppAdvisory.PetsSpriteMegaPack
+namespace AppAdvisory.BlackMonsterPack
 {
 	[InitializeOnLoad]
 	public class Autorun
@@ -51,30 +53,58 @@ namespace AppAdvisory.PetsSpriteMegaPack
 		/******* TO MODIFY **********/
 		/******* TO MODIFY **********/
 
+		private static bool IsPlatformSupported(BuildTargetGroup target) {
+			var moduleManager = System.Type.GetType("UnityEditor.Modules.ModuleManager,UnityEditor.dll");
+			var isPlatformSupportLoaded = moduleManager.GetMethod("IsPlatformSupportLoaded", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic);
+			var getTargetStringFromBuildTarget = moduleManager.GetMethod("GetTargetStringFromBuildTargetGroup", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic);
+			return (bool)isPlatformSupportLoaded.Invoke(null,new object[] {(string)getTargetStringFromBuildTarget.Invoke(null, new object[] {target})});
+
+		}
+
+
+		public static IEnumerable<T> GetValues<T>() {
+			return Enum.GetValues(typeof(T)).Cast<T>();
+		}
+
+
 		static void SetScriptingDefineSymbols () 
 		{
-			SetSymbolsForTarget (BuildTargetGroup.Android, VSRATE);
-			SetSymbolsForTarget (BuildTargetGroup.iOS, VSRATE); 
-			SetSymbolsForTarget (BuildTargetGroup.WSA, VSRATE);
-			#if !UNITY_5_5_OR_NEWER
-			#if !UNITY5_0 && !UNITY_5_1
-			SetSymbolsForTarget (BuildTargetGroup.Nintendo3DS, VSRATE);
-			#endif
-			SetSymbolsForTarget (BuildTargetGroup.PS3, VSRATE);
-			SetSymbolsForTarget (BuildTargetGroup.XBOX360, VSRATE);
-			#endif
-			SetSymbolsForTarget (BuildTargetGroup.PS4, VSRATE);
-			SetSymbolsForTarget (BuildTargetGroup.PSM, VSRATE);
-			SetSymbolsForTarget (BuildTargetGroup.PSP2, VSRATE);
-			SetSymbolsForTarget (BuildTargetGroup.SamsungTV, VSRATE); 
-			SetSymbolsForTarget (BuildTargetGroup.Standalone, VSRATE);
-			SetSymbolsForTarget (BuildTargetGroup.Tizen, VSRATE);
-			#if !UNITY5_0 && !UNITY_5_1
-			SetSymbolsForTarget (BuildTargetGroup.tvOS, VSRATE);
-			SetSymbolsForTarget (BuildTargetGroup.WiiU, VSRATE); 
-			#endif
-			SetSymbolsForTarget (BuildTargetGroup.WebGL, VSRATE);
-			SetSymbolsForTarget (BuildTargetGroup.XboxOne, VSRATE);
+
+			foreach (BuildTargetGroup target in GetValues<BuildTargetGroup>()) 
+			{
+
+				if (IsPlatformSupported (target)) 
+				{
+
+					SetSymbolsForTarget (target, VSRATE);
+					//					SetSymbolsForTarget (target, "Works");
+				}
+
+			}
+
+//
+//			SetSymbolsForTarget (BuildTargetGroup.Android, VSRATE);
+//			SetSymbolsForTarget (BuildTargetGroup.iOS, VSRATE); 
+//			SetSymbolsForTarget (BuildTargetGroup.WSA, VSRATE);
+//			#if !UNITY_5_5_OR_NEWER
+//			#if !UNITY5_0 && !UNITY_5_1
+//			SetSymbolsForTarget (BuildTargetGroup.Nintendo3DS, VSRATE);
+//			#endif
+//			SetSymbolsForTarget (BuildTargetGroup.PS3, VSRATE);
+//			SetSymbolsForTarget (BuildTargetGroup.XBOX360, VSRATE);
+//			#endif
+//			SetSymbolsForTarget (BuildTargetGroup.PS4, VSRATE);
+//			SetSymbolsForTarget (BuildTargetGroup.PSM, VSRATE);
+//			SetSymbolsForTarget (BuildTargetGroup.PSP2, VSRATE);
+//			SetSymbolsForTarget (BuildTargetGroup.SamsungTV, VSRATE); 
+//			SetSymbolsForTarget (BuildTargetGroup.Standalone, VSRATE);
+//			SetSymbolsForTarget (BuildTargetGroup.Tizen, VSRATE);
+//			#if !UNITY5_0 && !UNITY_5_1
+//			SetSymbolsForTarget (BuildTargetGroup.tvOS, VSRATE);
+//			SetSymbolsForTarget (BuildTargetGroup.WiiU, VSRATE); 
+//			#endif
+//			SetSymbolsForTarget (BuildTargetGroup.WebGL, VSRATE);
+//			SetSymbolsForTarget (BuildTargetGroup.XboxOne, VSRATE);
 		}
 
 
@@ -120,13 +150,12 @@ namespace AppAdvisory.PetsSpriteMegaPack
 				return;
 			}
 
-
 			if(DOSCIRPTINGSYMBOL)
 				SetScriptingDefineSymbols ();
 
 			int count = EditorPrefs.GetInt(Welcome.PREFSHOWATSTARTUP + "autoshow",0);
 
-			if(count == 10 || count == 30 || count == 50 || count == 80 || count == 100)
+			if(count == 50 || count == 300)
 			{
 				Application.OpenURL("http://u3d.as/oWD");
 			}

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
-namespace AppAdvisory.XXXXXXXXXX
+namespace AppAdvisory.BlackMonsterPack
 {
 	public class OpenMoreGames : MonoBehaviour 
 	{
