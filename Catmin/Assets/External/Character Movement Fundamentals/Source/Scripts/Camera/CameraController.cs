@@ -88,8 +88,21 @@ namespace CMF
 			if(cameraInput == null)
 				return;
 
+			Vector3 mousePosition = Input.mousePosition;
+
+			if(mousePosition.x > 0 && mousePosition.x < Screen.width/3)
+			{
+				//rotate left
+				RotateCamera(Time.deltaTime * -cameraSpeed, 0);
+			}
+			else if( mousePosition.x > Screen.width/3 * 2 && mousePosition.x < Screen.width)
+			{
+				//rotate right
+				RotateCamera(Time.deltaTime *cameraSpeed, 0);
+			}
+
 			//Get input values;
-			float _inputHorizontal = cameraInput.GetHorizontalCameraInput();
+			/*float _inputHorizontal = cameraInput.GetHorizontalCameraInput();
 			float _inputVertical = cameraInput.GetVerticalCameraInput();
 
 			if(!useMouseInput)
@@ -97,9 +110,9 @@ namespace CMF
 				//When not using mouse input, multiply input with 'cameraSpeed' and delta time;
 				_inputHorizontal *= Time.deltaTime * cameraSpeed;
 				_inputVertical *= Time.deltaTime * cameraSpeed;
-			}
+			}*/
 		
-			RotateCamera(_inputHorizontal, _inputVertical);
+			//RotateCamera(_inputHorizontal, _inputVertical);
 		}
 
 		//Rotate camera; 
@@ -138,6 +151,8 @@ namespace CMF
 			upwardsDirection = tr.up;
 
 			tr.localRotation = Quaternion.Euler(new Vector3(currentXAngle, currentYAngle, 0));
+
+			
 		}
 
 		//Set the camera's field-of-view (FOV);
