@@ -11,13 +11,14 @@ GameObject:
   - component: {fileID: 3166077592235616006}
   - component: {fileID: 3166077592235616004}
   - component: {fileID: 3166077592235616007}
+  - component: {fileID: 2824816512294579911}
   m_Layer: 5
   m_Name: CatOutline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3166077592235616006
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25,7 +26,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3166077592235616009}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -76,6 +77,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2824816512294579911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3166077592235616009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 134b53a30051ab4449a1d92c30d8d90a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CatImage: {fileID: 3166077592423523883}
 --- !u!1 &3166077592423523885
 GameObject:
   m_ObjectHideFlags: 0

@@ -43,6 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2a8b287be41415438cccc07059a73d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zoneName: Mystical Caverns
+  GameStateManager: {fileID: 5747804714849475972}
   CatsToSave:
   - {fileID: 0}
   - {fileID: 0}
@@ -93,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 060bd9949a422844ba4631c5791c9839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UI: {fileID: 0}
   Zones:
   - {fileID: 5747804715161309081}
   - {fileID: 5747804715161309081}
@@ -140,6 +143,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2a8b287be41415438cccc07059a73d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zoneName: Granny's Forest
+  GameStateManager: {fileID: 5747804714849475972}
   CatsToSave:
   - {fileID: 0}
   - {fileID: 0}

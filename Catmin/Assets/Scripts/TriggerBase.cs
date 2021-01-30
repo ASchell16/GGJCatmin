@@ -12,7 +12,7 @@ public class TriggerBase : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(triggerOnTagEnter))
+        if (!string.IsNullOrEmpty(other.tag) && other.CompareTag(triggerOnTagEnter))
         {
             if (openDoor)
             {
