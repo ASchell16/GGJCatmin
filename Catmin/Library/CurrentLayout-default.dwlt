@@ -122,7 +122,11 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 54
+=======
+  controlID: 103
+>>>>>>> 922bd8a46c1b7311af56d7309696176f7e9d43ce
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +151,11 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 55
+=======
+  controlID: 65
+>>>>>>> 922bd8a46c1b7311af56d7309696176f7e9d43ce
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,7 +181,11 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 56
+=======
+  controlID: 39
+>>>>>>> 922bd8a46c1b7311af56d7309696176f7e9d43ce
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -335,7 +347,7 @@ MonoBehaviour:
   m_PosLeft: {x: 0, y: 0}
   m_PosRight: {x: 0, y: 559}
   m_Scope: 1
-  m_SplitterFlex: 0
+  m_SplitterFlex: 0.2
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -455,7 +467,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 4ec9ffffeec9ffff76caffff62e0ffff42e1ffff12e2ffff60fbffff
+=======
+      m_ExpandedIDs: dcf7ffffeef7ffff0cf8ffff44fbffff
+>>>>>>> 922bd8a46c1b7311af56d7309696176f7e9d43ce
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -658,21 +674,35 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Low_poly_styled_rocks
+=======
+    - Assets/Scenes
+>>>>>>> 922bd8a46c1b7311af56d7309696176f7e9d43ce
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 79
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Low_poly_styled_rocks
+=======
+  - Assets/Scenes
+>>>>>>> 922bd8a46c1b7311af56d7309696176f7e9d43ce
   m_LastFoldersGridSize: 79
-  m_LastProjectPath: G:\GGJCatmin\Catmin
+  m_LastProjectPath: E:\GitHub\GGJCatmin\Catmin
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: b6470000
     m_LastClickedID: 18358
     m_ExpandedIDs: 000000003437000000ca9a3b
+=======
+    m_SelectedIDs: 1a370000
+    m_LastClickedID: 14106
+    m_ExpandedIDs: 000000001437000000ca9a3b
+>>>>>>> 922bd8a46c1b7311af56d7309696176f7e9d43ce
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
