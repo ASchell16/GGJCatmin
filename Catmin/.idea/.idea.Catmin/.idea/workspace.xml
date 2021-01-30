@@ -4,59 +4,10 @@
     <list default="true" id="6005bd74-acde-4ef7-b17f-6c809e820ee4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Catmin/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Catmin/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Catmin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Catmin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Autorun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Autorun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Autorun.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Autorun.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/CanvasMoreGame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/CanvasMoreGame.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/CanvasMoreGame.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/CanvasMoreGame.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/DGChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/DGChecker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/DGChecker.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/DGChecker.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/EditorSample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/EditorSample.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/EditorSample.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/EditorSample.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/appadvisoryBanner.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/appadvisoryBanner.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_codedescription.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_codedescription.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_community.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_community.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_facebook.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_facebook.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_gif.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_gif.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_leaderboard.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_leaderboard.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_linkedin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_linkedin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_monetization.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_monetization.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_moregames.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_moregames.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_onlinedoc.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_onlinedoc.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_question.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_question.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_rate.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_rate.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_share.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_share.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_support.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_support.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_vsrate.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Resources/btn_vsrate.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Welcome.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Welcome.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Welcome.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/Editor/Welcome.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/EditorScripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/EditorScripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/EditorScripts/OpenMoreGames.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/EditorScripts/OpenMoreGames.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/EditorScripts/OpenMoreGames.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PetsPack/EditorPopup/EditorScripts/OpenMoreGames.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageManager/ProjectCache" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PackageManager/ProjectCache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageManager/ProjectCache.md5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PackageManager/ProjectCache.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" beforeDir="false" afterPath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +21,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/External/Character Movement Fundamentals/Source/Scripts/Input/Character/CharacterKeyboardInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameStateManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/SaveGameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CatMatRandomizer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,6 +32,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/CatSpritePhysics.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CatMatRandomizer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SaveGameData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CatCounter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ZoneManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameStateManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nlgfkR1MSCVzqW5CeElI8ciUcb" />
