@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6005bd74-acde-4ef7-b17f-6c809e820ee4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Catmin/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Catmin/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Catmin/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Catmin/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Catmin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Catmin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/DoorCloseVertical.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/DoorCloseVertical.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/DoorOpenVertical.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/DoorOpenVertical.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CatOutline.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CatOutline.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameCanvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CatCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CatCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStateManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TriggerBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TriggerBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ZoneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ZoneManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +18,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FE84F4A7-54DA-4A6B-B64F-CA409D40938A/1b/4e304764/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CatFollowBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/External/Character Movement Fundamentals/Source/Scripts/Input/Character/CharacterKeyboardInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameStateManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FE84F4A7-54DA-4A6B-B64F-CA409D40938A/45/c272d3b7/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
@@ -57,6 +43,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/CatCounter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ZoneManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CatFollowBehaviour.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nlgfkR1MSCVzqW5CeElI8ciUcb" />

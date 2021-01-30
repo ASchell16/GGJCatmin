@@ -84,6 +84,24 @@
             </e>
           </e>
         </e>
+        <e p="NavMeshComponents" t="Include">
+          <e p="Editor" t="Include">
+            <e p="NavMeshAssetManager.cs" t="Include" />
+            <e p="NavMeshComponentsEditor.asmdef" t="Include" />
+            <e p="NavMeshComponentsGUIUtility.cs" t="Include" />
+            <e p="NavMeshLinkEditor.cs" t="Include" />
+            <e p="NavMeshModifierEditor.cs" t="Include" />
+            <e p="NavMeshModifierVolumeEditor.cs" t="Include" />
+            <e p="NavMeshSurfaceEditor.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="NavMeshComponents.asmdef" t="Include" />
+            <e p="NavMeshLink.cs" t="Include" />
+            <e p="NavMeshModifier.cs" t="Include" />
+            <e p="NavMeshModifierVolume.cs" t="Include" />
+            <e p="NavMeshSurface.cs" t="Include" />
+          </e>
+        </e>
         <e p="PetsPack" t="Include">
           <e p="EditorPopup" t="Include">
             <e p="Editor" t="Include">
@@ -108,6 +126,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="CatCounter.cs" t="Include" />
+          <e p="CatFollowBehaviour.cs" t="Include" />
           <e p="CatMatRandomizer.cs" t="Include" />
           <e p="GameStateManager.cs" t="Include" />
           <e p="GameUI.cs" t="Include" />
@@ -115,6 +134,9 @@
           <e p="MenuController.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="CatPointer.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="URP_NiloCatExtension_ScreenSpaceDecal_Unlit.shader" t="Include" />
           </e>
           <e p="TriggerBase.cs" t="Include" />
           <e p="Utility" t="Include">
@@ -136,6 +158,8 @@
         </e>
       </e>
       <e p="Catmin.sln" t="IncludeFlat" />
+      <e p="NavMeshComponents.csproj" t="IncludeRecursive" />
+      <e p="NavMeshComponentsEditor.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
