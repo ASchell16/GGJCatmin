@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    /*
     public GameObject MainMenu;
     public GameObject PausedMenu;
     public GameObject BlackScreen;
@@ -37,16 +36,6 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        FadePercent = GameObject.FindGameObjectWithTag("SpawnCube")
-                                .GetComponent<SpawnEnviro>().Populate;
-
-        Won = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().IsWon;
-
-        if (Won)
-        {
-            HasWon();
-        }
         if (FadePercent >= 500)
         {
             Fade.a -= 0.01f;
@@ -110,6 +99,5 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
 
         yield return new WaitForSeconds(3f);
-    }*/
-
+    }
 }
