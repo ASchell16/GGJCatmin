@@ -97,14 +97,26 @@
             </e>
           </e>
         </e>
+        <e p="Samples" t="Include">
+          <e p="Terrain Tools" t="Include">
+            <e p="0.1.0-preview" t="Include">
+              <e p="Terrain Assets" t="Include">
+                <e p="ThirdPartyNotices.txt" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="CatCounter.cs" t="Include" />
           <e p="CatMatRandomizer.cs" t="Include" />
-          <e p="DoorTriggerBase.cs" t="Include" />
           <e p="GameStateManager.cs" t="Include" />
           <e p="GameUI.cs" t="Include" />
           <e p="MainMenuManager.cs" t="Include" />
           <e p="MenuController.cs" t="Include" />
+          <e p="Player" t="Include">
+            <e p="CatPointer.cs" t="Include" />
+          </e>
+          <e p="TriggerBase.cs" t="Include" />
           <e p="Utility" t="Include">
             <e p="AudioManager.cs" t="Include" />
             <e p="SaveGameData.cs" t="Include" />
@@ -112,6 +124,7 @@
             <e p="Singleton.cs" t="Include" />
           </e>
           <e p="ZoneManager.cs" t="Include" />
+          <e p="ZoneTrigger.cs" t="Include" />
         </e>
         <e p="UltraMare" t="Include">
           <e p="Minimalist Cartoon UI Pack" t="Include">

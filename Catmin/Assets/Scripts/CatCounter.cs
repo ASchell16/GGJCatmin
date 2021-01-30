@@ -10,6 +10,6 @@ public class CatCounter : MonoBehaviour
     
     public void SetCatState(bool catFound)
     {
-        CatImage.gameObject.SetActive(catFound);
+        CatImage.enabled = catFound;
     }
 }

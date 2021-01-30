@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class ZoneManager : MonoBehaviour
 {
+    [SerializeField] private string zoneName = "";
+    public string ZoneName => zoneName;
+    [SerializeField] private GameStateManager GameStateManager = null;
     [SerializeField] private GameObject[] CatsToSave = null;
     public int CatCount => CatsToSave.Length;
-    private int CatsSaved = 0;
+    private int catsSaved = 0;
+    public int CatsSaved => catsSaved;
 
     public void CatSaved()
     {
-        CatsSaved++;
+        catsSaved++;
     }
 
     public void SetUIForZone()
     {
-        
+        GameStateManager.SetupUIForZone(this);
     }
 }
