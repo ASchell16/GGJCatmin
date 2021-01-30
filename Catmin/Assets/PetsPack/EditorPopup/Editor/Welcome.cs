@@ -26,7 +26,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 using System;
 
-namespace AppAdvisory.PetsSpriteMegaPack
+namespace AppAdvisory.BlackMonsterPack
 {
 	[InitializeOnLoad]
 	public class Welcome : EditorWindow 
@@ -36,9 +36,10 @@ namespace AppAdvisory.PetsSpriteMegaPack
 		/******* TO MODIFY **********/
 		/******* TO MODIFY **********/
 		/******* TO MODIFY **********/
-		private const string RATEUS_URL = "http://u3d.as/Bqo";
+//		private const string ONLINE_DOC_URL = "XXXXXXX_YOUR_HTML_DOC_LINK_HERE_XXXXXXX";
+		private const string RATEUS_URL = "http://u3d.as/C9L";
 
-		private const string NAME_OF_THE_GAME = "Pets Sprite Mega Pack";
+		private const string NAME_OF_THE_GAME = "Black Monster Mega Pack";
 		/******* TO MODIFY **********/
 		/******* TO MODIFY **********/
 		/******* TO MODIFY **********/
@@ -170,6 +171,10 @@ namespace AppAdvisory.PetsSpriteMegaPack
 			if (Button(facebookIcon,"Facebook page","Follow us on Facebook.")){
 				Application.OpenURL(FACEBOOK_URL);
 			}
+
+//			if (Button(onlineDocIcon,"Online documentation","Read the full documentation.")){
+//				Application.OpenURL(ONLINE_DOC_URL);
+//			}
 
 			if (Button(questionIcon,"A request?","Don't hesitate to contact us.")){
 				Application.OpenURL(REQUEST_URL);
