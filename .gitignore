@@ -60,3 +60,5 @@ crashlytics-build.properties
 
 Catmin/Library/PackageCache
 Catmin/Library
+Catmin/Temp/UnityLockfile
+Catmin/Packages/packages-lock.json
