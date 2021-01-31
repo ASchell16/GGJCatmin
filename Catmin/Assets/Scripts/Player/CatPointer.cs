@@ -29,7 +29,7 @@ public class CatPointer : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             target.position = hit.point + targetOffset;
-
+            hitPoint = hit.point;
             target.forward = Vector3.Lerp(target.forward, hit.normal, .3f);
 
         }
