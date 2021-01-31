@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6005bd74-acde-4ef7-b17f-6c809e820ee4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Blender Models.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Blender Models/Rock01.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Blender Models/Rock02.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LostCats/PostProcessing Profile.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LostCats/PostProcessing Profile.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Catmin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Catmin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LowPolyNaturePropsPack/sample/New Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LowPolyNaturePropsPack/sample/New Terrain.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low_Poly_Mini_Village/Art/Materials/Grass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Low_Poly_Mini_Village/Art/Materials/Grass.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low_Poly_Mini_Village/Prefabs/Tree_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Low_Poly_Mini_Village/Prefabs/Tree_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low_Poly_Mini_Village/Prefabs/Tree_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Low_Poly_Mini_Village/Prefabs/Tree_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low_Poly_Mini_Village/Prefabs/Tree_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Low_Poly_Mini_Village/Prefabs/Tree_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low_Poly_Mini_Village/Prefabs/Tree_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Low_Poly_Mini_Village/Prefabs/Tree_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Catpsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Catpsule.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameStateManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameStateManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LostCats.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LostCats.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LostCats/NavMesh-NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LostCats/NavMesh-NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain/MainTerrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain/MainTerrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStateManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,10 +42,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/ComplexCatTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Cat/Cat.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/CatManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameStateManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ZoneManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameStateManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nlgfkR1MSCVzqW5CeElI8ciUcb" />
@@ -75,7 +55,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34991798" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -133,5 +113,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/GameUI.cs</url>
+          <line>65</line>
+          <properties documentPath="D:\Programming\Catmin\GGJCatmin\Catmin\Assets\Scripts\GameUI.cs" initialLine="61" containingFunctionPresentation="method 'UpdateCatCount'">
+            <startOffsets>
+              <option value="2584" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2622" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

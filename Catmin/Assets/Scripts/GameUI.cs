@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Security.Policy;
-using UnityEngine.UI;
+﻿using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
