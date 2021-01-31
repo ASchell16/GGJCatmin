@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 243307464919150095}
   - component: {fileID: 354341420350710506}
   - component: {fileID: 354341420350710507}
+  - component: {fileID: 4449590734981025933}
   m_Layer: 0
   m_Name: notsoWobblyCat
   m_TagString: Untagged
@@ -150,7 +151,7 @@ Transform:
   m_GameObject: {fileID: 588764790785356981}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.16, y: -4.464, z: -1.017}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 9210058649150373521}
   - {fileID: 8223983157968271789}
@@ -175,7 +176,7 @@ MonoBehaviour:
   frontLegAnchors:
   - {fileID: 1413349295969228493}
   - {fileID: 1004812741003993849}
-  navAgent: {fileID: 0}
+  rotationSpeed: 100
   multiplier: 10
 --- !u!195 &354341420350710507
 NavMeshAgent:
@@ -199,6 +200,22 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &4449590734981025933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588764790785356981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b18c159dac7c24f95d934ba6cb96f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 354341420350710507}
+  state: 0
+  isFlying: 0
+  isGettingIntoPosition: 0
 --- !u!1 &825112629910300670
 GameObject:
   m_ObjectHideFlags: 0
