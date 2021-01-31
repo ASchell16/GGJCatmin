@@ -1,11 +1,15 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Object = UnityEngine.Object;
 
 public class CatManager : MonoBehaviour
 {
+    [SerializeField] public GameStateManager gameStateManager = null;
     private List<Cat> allCats = new List<Cat>();
+    public List<Cat> CatsList => allCats;
     [Header("Positioning")]
     public Transform catThrowPosition;
     [Header("Targeting")]
@@ -13,6 +17,9 @@ public class CatManager : MonoBehaviour
     [SerializeField] private CatPointer controller = default;
     [SerializeField] private float selectionRadius = 3;
     public int controlledCats = 0;
+
+    public event Action CatThrown;
+    public event Action CatRecalled;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +42,7 @@ public class CatManager : MonoBehaviour
 
                     cat.Throw(controller.hitPoint, .5f, delay);
                     controlledCats--;
-
+                    CatThrown?.Invoke();
                     /*pikminThrow.Invoke(controller.hitPoint);
                     pikminFollow.Invoke(controlledPikmin);*/
                     break;
@@ -53,9 +60,11 @@ public class CatManager : MonoBehaviour
                     {
                         if (cat.isFlying || cat.isGettingIntoPosition)
                             return;
-
+                        
                         cat.SetTarget(transform, 0.25f);
+                        cat.isFound = true;
                         controlledCats++;
+                        CatRecalled?.Invoke();
                         //pikminFollow.Invoke(controlledPikmin);
                     }
                 }

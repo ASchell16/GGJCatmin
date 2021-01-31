@@ -13,6 +13,8 @@ public class Cat : MonoBehaviour
     public bool isFlying;
     public bool isGettingIntoPosition;
 
+    public bool isFound = false;
+    //[SerializeField] private CatFollowBehaviour followBehaviour;
     public GameObject riggedCat;
     //private Rigidbody[] riggedCatBones;
     public GameObject ragdollCat;
@@ -50,8 +52,11 @@ public class Cat : MonoBehaviour
         {
             while (true)
             {
-                if(agent.enabled)
+                if (agent.enabled)
+                {
                     agent.SetDestination(target.position);
+                }
+
                 yield return wait;
             }
         }

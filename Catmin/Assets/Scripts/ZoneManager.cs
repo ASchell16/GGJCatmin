@@ -12,9 +12,9 @@ public class ZoneManager : MonoBehaviour
     private int catsSaved = 0;
     public int CatsSaved => catsSaved;
 
-    public void CatSaved()
+    public void CatsSavedUpdate(int saved)
     {
-        catsSaved++;
+        catsSaved = saved;
     }
 
     public void SetUIForZone()
