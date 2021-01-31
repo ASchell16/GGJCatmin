@@ -11,32 +11,53 @@ public class Cat : MonoBehaviour
     public State state = default;
     //public InteractiveObject objective;
     public bool isFlying;
+    private Quaternion flyingSpin;
+    private float spinSpeed = 0.01f;
     public bool isGettingIntoPosition;
 
     public bool isFound = false;
     //[SerializeField] private CatFollowBehaviour followBehaviour;
     public GameObject riggedCat;
-    //private Rigidbody[] riggedCatBones;
+
+    private Rigidbody[] riggedCatBones;
+    //private List<> ragdollCatBoneTransforms;
     public GameObject ragdollCat;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        riggedCatBones = ragdollCat.GetComponentsInChildren<Rigidbody>(true);
+
+        foreach(Rigidbody rb in riggedCatBones)
+        {
+            rb.isKinematic = true;
+            rb.useGravity = false;
+        }
+
+        //ragdollCatBoneTransforms = ragdollCat.GetComponentsInChildren<Transform>(true);
+        /*foreach(Transform tr in ragdollCat.GetComponentsInChildren<Transform>(true))
+        {
+            ragdollCatBoneTransforms.Add(new Transform(tr));
+        }*/
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(isFlying)
+        {
+            ragdollCat.transform.Rotate(flyingSpin.eulerAngles*spinSpeed);
+        }
     }
     public void SetTarget(Transform target, float updateTime = 1f)
     {
         
+        riggedCat.SetActive(true);
+        
         ragdollCat.transform.position = transform.position;
         riggedCat.transform.position = transform.position;
-        riggedCat.SetActive(true);
         ragdollCat.SetActive(false);
-
 
         state = State.Follow;
         agent.stoppingDistance = 1f;
@@ -63,8 +84,6 @@ public class Cat : MonoBehaviour
     }
     public void Throw(Vector3 target, float time, float delay)
     {
-
-        riggedCat.SetActive(false);
         ragdollCat.SetActive(true);
 
         isFlying = true;
@@ -72,17 +91,40 @@ public class Cat : MonoBehaviour
         
         agent.stoppingDistance = 0f;
         agent.enabled = false;
-        riggedCat.transform.position = transform.position;
-        ragdollCat.transform.position = transform.position;
+
+        flyingSpin = Random.rotation;
+
+        foreach(Rigidbody rb in riggedCatBones)
+        {
+            rb.AddTorque(new Vector3(Random.Range(100, 500),Random.Range(100, 500),Random.Range(100, 500)));
+            
+            rb.isKinematic = true;
+            rb.useGravity = false;
+        }
+
+        riggedCat.transform.localPosition = Vector3.zero;
+        ragdollCat.transform.localPosition = Vector3.zero;
+
+
+
+        riggedCat.SetActive(false);
 
         transform.DOJump(target, 5, 1, time).SetDelay(delay).SetEase(Ease.Linear).OnComplete(() =>
         {
             isFlying = false;
             CheckInteraction();
-            target.y+=0.5f;
-            transform.position = target;
-            ragdollCat.transform.position = target;
-            riggedCat.transform.position = target;
+            //target.y+=0.5f;
+            //transform.position = ragdollCat.transform.position;
+            ragdollCat.transform.position = transform.position;
+            //ragdollCat.transform.GetChild(0).transform.position = transform.position;
+            riggedCat.transform.position = ragdollCat.transform.position;
+            foreach(Rigidbody rb in riggedCatBones)
+            {
+                rb.isKinematic = false;
+                rb.useGravity = true;
+            }
+            //riggedCat.SetActive(true);
+            //ragdollCat.SetActive(false);
         });
 
         transform.LookAt(new Vector3(target.x, transform.position.y, target.z));

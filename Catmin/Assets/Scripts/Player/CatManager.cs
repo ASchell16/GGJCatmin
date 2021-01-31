@@ -38,9 +38,12 @@ public class CatManager : MonoBehaviour
                 {
                     cat.agent.enabled = false;
                     float delay = .05f;
-                    cat.transform.DOMove(catThrowPosition.position,delay);
+                    cat.transform.position = catThrowPosition.position;
+                    //cat.transform.DOMove(catThrowPosition.position,delay);
+                    Vector3 target = controller.hitPoint;
+                    target.y += 0.5f;
 
-                    cat.Throw(controller.hitPoint, .5f, delay);
+                    cat.Throw(target, 1.0f, delay);
                     controlledCats--;
                     CatThrown?.Invoke();
                     /*pikminThrow.Invoke(controller.hitPoint);
