@@ -6,19 +6,24 @@ using UnityEngine;
 
 public class GameUI : MonoBehaviour
 {
-    [SerializeField] private Transform CatCounterParent = null;
+    [SerializeField] private GridLayoutGroup CatCounterParent = null;
     [SerializeField] private CatCounter CatCountBasePrefab = null;
     [SerializeField] private Text FollowingCatsCount = null;
     [SerializeField] private Text ZoneName = null;
     private ZoneManager currentZone;
+    private GridLayoutGroup gridToUseForCatIcons = null;
 
     public void SetUIForZone(ZoneManager zone)
     {
         currentZone = zone;
-        CatCounterParent.DetachChildren();
+        if (gridToUseForCatIcons != null)
+            Destroy(gridToUseForCatIcons.gameObject);
+        CatCounterParent.gameObject.SetActive(true);
+        gridToUseForCatIcons = Instantiate(CatCounterParent, CatCounterParent.transform.parent, true);
+        CatCounterParent.gameObject.SetActive(false);
         for (int i = 0; i < currentZone.CatCount; i++)
         {
-            var catPrefab = Instantiate(CatCountBasePrefab, CatCounterParent, false);
+            var catPrefab = Instantiate(CatCountBasePrefab, gridToUseForCatIcons.transform, false);
             catPrefab.gameObject.SetActive(true);
             catPrefab.SetCatState(currentZone.CatsSaved >= currentZone.CatCount);
         }
@@ -28,11 +33,16 @@ public class GameUI : MonoBehaviour
 
     public void UpdateCatCount(CatManager catManager)
     {
+        if (gridToUseForCatIcons != null)
+            Destroy(gridToUseForCatIcons.gameObject);
+        CatCounterParent.gameObject.SetActive(true);
+        gridToUseForCatIcons = Instantiate(CatCounterParent, CatCounterParent.transform.parent, true);
+        CatCounterParent.gameObject.SetActive(false);
         FollowingCatsCount.text = catManager.controlledCats.ToString();
         int foundCats = 0;
         for (int i = 0; i < currentZone.CatCount; i++)
         {
-                var catPrefab = Instantiate(CatCountBasePrefab, CatCounterParent, false);
+                var catPrefab = Instantiate(CatCountBasePrefab, gridToUseForCatIcons.transform, false);
                 catPrefab.gameObject.SetActive(true);
                 if (i < catManager.CatsList.Count)
                 {

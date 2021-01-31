@@ -204,6 +204,7 @@ MonoBehaviour:
   - {fileID: 5747804715161309081}
   - {fileID: 5747804715161309081}
   StarterZone: {fileID: 5747804715161309081}
+  catManager: {fileID: 0}
 --- !u!1 &5747804715161309080
 GameObject:
   m_ObjectHideFlags: 0

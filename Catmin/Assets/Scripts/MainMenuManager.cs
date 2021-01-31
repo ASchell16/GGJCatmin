@@ -9,7 +9,7 @@ public class MainMenuManager : MonoBehaviour
     public void ButtonStart()
     {
         // do fade out
-        SceneManager.LoadSceneAsync("GameScene");
+        SceneManager.LoadSceneAsync("LostCats");
     }
 
     public void ButtonQuit()

@@ -87,6 +87,7 @@ MonoBehaviour:
   state: 0
   isFlying: 0
   isGettingIntoPosition: 0
+  isFound: 0
   riggedCat: {fileID: 7241420606846044846}
   ragdollCat: {fileID: 1045005716644220459}
 --- !u!1001 &2852234371641416472
@@ -472,6 +473,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: 0.0000000031432144
       objectReference: {fileID: 0}
+    - target: {fileID: 3254086189435746771, guid: 983e6fbc74a80914099856a265c13163, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 983e6fbc74a80914099856a265c13163, type: 3}
 --- !u!1 &1045005716644220459 stripped
@@ -535,6 +540,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 354341420350710506, guid: 6a6ef9258860af541a127aff57963faa, type: 3}
+      propertyPath: navAgent
+      value: 
+      objectReference: {fileID: 7547989532255329520}
+    - target: {fileID: 354341420350710507, guid: 6a6ef9258860af541a127aff57963faa, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 588764790785356981, guid: 6a6ef9258860af541a127aff57963faa, type: 3}
       propertyPath: m_Name
       value: notsoWobblyCat
@@ -550,5 +563,10 @@ GameObject:
 --- !u!4 &8013417765793746964 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 243307464919150095, guid: 6a6ef9258860af541a127aff57963faa, type: 3}
+  m_PrefabInstance: {fileID: 7806154161720147483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &7547989532255329520 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 354341420350710507, guid: 6a6ef9258860af541a127aff57963faa, type: 3}
   m_PrefabInstance: {fileID: 7806154161720147483}
   m_PrefabAsset: {fileID: 0}
