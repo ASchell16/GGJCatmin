@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6005bd74-acde-4ef7-b17f-6c809e820ee4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Catmin/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Catmin/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Catmin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Catmin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/DoorAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/DoorAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/DoorOpenVertical.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/DoorOpenVertical.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/AllIn1SpriteShader/URP_Import_All1Sh.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/Character Movement Fundamentals/Source/Environment/Materials/Mat_Text.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Character Movement Fundamentals/Source/Environment/Materials/Mat_Text.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/PolygonPrototype/URP_ExtractMe.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene/NavMesh-NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene/NavMesh-NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TriggerBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TriggerBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/NavMeshComponents.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/NavMeshComponents.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/NavMeshComponentsEditor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/NavMeshComponentsEditor.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,15 +30,16 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FE84F4A7-54DA-4A6B-B64F-CA409D40938A/1b/4e304764/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CatFollowBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/External/Character Movement Fundamentals/Source/Scripts/Input/Character/CharacterKeyboardInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameStateManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FE84F4A7-54DA-4A6B-B64F-CA409D40938A/45/c272d3b7/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ComplexCatTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CatMatRandomizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CatFollowBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/External/Character Movement Fundamentals/Source/Scripts/Input/Character/CharacterKeyboardInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ZoneTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/SaveGameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CatMatRandomizer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -37,13 +50,14 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SaveGameData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DoorTriggerVertical.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DoorTriggerBase.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TriggerBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ZoneTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameStateManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CatCounter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ZoneManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CatFollowBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TriggerBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ComplexCatTrigger.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nlgfkR1MSCVzqW5CeElI8ciUcb" />
@@ -111,37 +125,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/TriggerBase.cs</url>
-          <line>14</line>
-          <properties documentPath="D:\Programming\Catmin\GGJCatmin\Catmin\Assets\Scripts\TriggerBase.cs" initialLine="14" containingFunctionPresentation="method 'OnTriggerEnter'">
-            <startOffsets>
-              <option value="400" />
-            </startOffsets>
-            <endOffsets>
-              <option value="476" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/TriggerBase.cs</url>
-          <line>16</line>
-          <properties documentPath="D:\Programming\Catmin\GGJCatmin\Catmin\Assets\Scripts\TriggerBase.cs" initialLine="16" containingFunctionPresentation="method 'OnTriggerEnter'">
-            <startOffsets>
-              <option value="499" />
-            </startOffsets>
-            <endOffsets>
-              <option value="512" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
