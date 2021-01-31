@@ -48,7 +48,7 @@ MonoBehaviour:
   hitPoint: {x: 0, y: 0, z: 0}
   follow: {fileID: 1047420362}
   followOffset: {x: 0, y: 0, z: 0}
-  target: {fileID: 502576696547587413}
+  target: {fileID: 0}
   targetOffset: {x: 0, y: 0, z: 0}
   cam: {fileID: 20245616600181088}
 --- !u!114 &6751770711447022126
@@ -63,11 +63,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d1fe07b74d1924ea403dfa8d115269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catThrowPosition: {fileID: 4112048102988980}
-  target: {fileID: 502576696547587413}
-  controller: {fileID: 1047420363}
-  selectionRadius: 3
-  controlledCats: 0
 --- !u!1 &1067364188689312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,7 +1031,7 @@ GameObject:
   - component: {fileID: 4125839173043467989}
   - component: {fileID: 1080982161434265124}
   m_Layer: 0
-  m_Name: Target
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1049,13 +1044,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126626856294151654}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.22, y: 0, z: -3.96}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1047420362}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4125839173043467989
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1083,7 +1078,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 884f3fdf6e9a2884eb7e985122f525d3, type: 2}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

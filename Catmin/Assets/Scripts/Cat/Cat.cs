@@ -13,32 +13,33 @@ public class Cat : MonoBehaviour
     public bool isFlying;
     public bool isGettingIntoPosition;
 
-    public GameObject riggedCat;
-    //private Rigidbody[] riggedCatBones;
-    public GameObject ragdollCat;
-
+    //[SerializeField] private CatFollowBehaviour followBehaviour;
 
     // Start is called before the first frame update
     void Start()
     {
+        
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
+        
     }
     public void SetTarget(Transform target, float updateTime = 1f)
     {
-        
-        ragdollCat.transform.position = transform.position;
-        riggedCat.transform.position = transform.position;
-        riggedCat.SetActive(true);
-        ragdollCat.SetActive(false);
-
+        /*if (state == State.Interact)
+        {
+            transform.parent = null;
+            agent.enabled = true;
+            objective.ReleasePikmin();
+            objective = null;
+        }*/
 
         state = State.Follow;
         agent.stoppingDistance = 1f;
         agent.enabled = true;
+        //OnStartFollow.Invoke(0);
 
         if (updateTarget != null)
             StopCoroutine(updateTarget);
@@ -58,29 +59,29 @@ public class Cat : MonoBehaviour
     }
     public void Throw(Vector3 target, float time, float delay)
     {
-
-        riggedCat.SetActive(false);
-        ragdollCat.SetActive(true);
+        //OnStartThrow.Invoke(0);
 
         isFlying = true;
         state = State.Idle;
-        
+
+        /*if (updateTarget != null)
+            StopCoroutine(updateTarget);
+        */
         agent.stoppingDistance = 0f;
         agent.enabled = false;
-        riggedCat.transform.position = transform.position;
-        ragdollCat.transform.position = transform.position;
 
         transform.DOJump(target, 5, 1, time).SetDelay(delay).SetEase(Ease.Linear).OnComplete(() =>
         {
+            //agent.enabled = true;
+            //agent.SetDestination(target);
             isFlying = false;
             CheckInteraction();
-            target.y+=0.5f;
-            transform.position = target;
-            ragdollCat.transform.position = target;
-            riggedCat.transform.position = target;
+
+            //OnEndThrow.Invoke(0);
         });
 
         transform.LookAt(new Vector3(target.x, transform.position.y, target.z));
+        //visualHandler.model.DOLocalRotate(new Vector3(360 * 3, 0, 0), time, RotateMode.LocalAxisAdd).SetDelay(delay);
 
     }
     void CheckInteraction()

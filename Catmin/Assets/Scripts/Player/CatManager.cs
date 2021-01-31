@@ -11,7 +11,7 @@ public class CatManager : MonoBehaviour
     [Header("Targeting")]
     [SerializeField] private Transform target = default;
     [SerializeField] private CatPointer controller = default;
-    [SerializeField] private float selectionRadius = 3;
+    [SerializeField] private float selectionRadius = 1;
     public int controlledCats = 0;
 
     // Start is called before the first frame update
