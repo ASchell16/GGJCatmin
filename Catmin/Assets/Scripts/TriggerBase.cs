@@ -6,7 +6,6 @@ public class TriggerBase : MonoBehaviour
 {
     [SerializeField] private Animator Animator = null;
 
-    [SerializeField] private bool openDoor = false;
     [SerializeField] private string animationName;
     [SerializeField] private string triggerOnTagEnter;
 
@@ -14,10 +13,7 @@ public class TriggerBase : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(other.tag) && other.CompareTag(triggerOnTagEnter))
         {
-            if (openDoor)
-            {
-                Animator.Play(animationName);
-            }
+            Animator.Play(animationName);
         }
     }
     
