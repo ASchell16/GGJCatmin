@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Security.Policy;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameUI : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class GameUI : MonoBehaviour
     [SerializeField] private Text ZoneName = null;
     private ZoneManager currentZone;
     private GridLayoutGroup gridToUseForCatIcons = null;
+    [SerializeField] private GameObject CompleteState = null;
 
     public void SetUIForZone(ZoneManager zone)
     {
@@ -20,6 +22,9 @@ public class GameUI : MonoBehaviour
             Destroy(gridToUseForCatIcons.gameObject);
         CatCounterParent.gameObject.SetActive(true);
         gridToUseForCatIcons = Instantiate(CatCounterParent, CatCounterParent.transform.parent, true);
+        
+        FollowingCatsCount.text = "0"; // temp
+        
         CatCounterParent.gameObject.SetActive(false);
         for (int i = 0; i < currentZone.CatCount; i++)
         {
@@ -47,6 +52,10 @@ public class GameUI : MonoBehaviour
                 if (i < catManager.CatsList.Count)
                 {
                     catPrefab.SetCatState(catManager.CatsList[i].isFound);
+                    if (catManager.CatsList[i].isFound)
+                    {
+                        foundCats++;
+                    }
                 }
                 else
                 {
@@ -54,5 +63,14 @@ public class GameUI : MonoBehaviour
                 }
         }
         currentZone.CatsSavedUpdate(foundCats);
+        if (foundCats >= currentZone.CatCount)
+        {
+            CompleteState.SetActive(true);
+        }
+    }
+
+    public void ButtonReturnToMenu()
+    {
+        SceneManager.LoadScene("MainMenuScene");
     }
 }
