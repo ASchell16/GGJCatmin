@@ -7,8 +7,8 @@ public class CatLegRotator : MonoBehaviour
 {
     public List<Transform> backLegAnchors;
     public List<Transform> frontLegAnchors;
+    public Rigidbody rb;
     NavMeshAgent navAgent;
-    public float rotationSpeed;
     public float multiplier;
 
     private void Start()
@@ -26,11 +26,11 @@ public class CatLegRotator : MonoBehaviour
     {
         foreach (Transform t in backLegAnchors)
         {
-            t.RotateAround(t.position, transform.right, Time.deltaTime * rotationSpeed * multiplier);
+            t.RotateAround(t.position, transform.right, Time.deltaTime * rb.velocity.magnitude * multiplier);
         }
         foreach (Transform t in frontLegAnchors)
         {
-            t.RotateAround(t.position, transform.right, Time.deltaTime * rotationSpeed * multiplier);
+            t.RotateAround(t.position, transform.right, Time.deltaTime * rb.velocity.magnitude * multiplier);
         }
     }
 }
